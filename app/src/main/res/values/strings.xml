@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">QuranApp</string>
+    <string name="title_surat">Title Surat</string>
+    <string name="ayat">Ayat</string>
+    <string name="no_ayat">99</string>
+    <string name="terjemahan">Artinya</string>
+    <string name="no_surat">99</string>
+    <string name="arti">Arti</string>
+    <string name="jumlah_ayat">Jumlah Ayat</string>
+    <string name="type">Type Surat</string>
+    <string name="nama_surat">Nama Surat</string>
 </resources>
