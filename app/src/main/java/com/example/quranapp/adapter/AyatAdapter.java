@@ -14,10 +14,10 @@ import com.example.quranapp.model.Ayat;
 
 import java.util.List;
 
-public class AyatAdapter {
+public class AyatAdapter extends RecyclerView.Adapter<AyatAdapter.Holder> {
     private Context context;
-    private List list;
-    private List listIndo;
+    private List<Ayat> list;
+    private List<Ayat> listIndo;
 
     public AyatAdapter(Context context, List list, List listIndo) {
         this.context = context;
@@ -37,8 +37,8 @@ public class AyatAdapter {
     public void onBindViewHolder(@NonNull Holder holder, int position) {
         Ayat ayat = list.get(position);
         Ayat ayatIndo = listIndo.get(position);
-        holder.nomorAyat.setText(ayat.getNomorAyat());
-        holder.arabic.setText(ayat.getText());
+        holder.nomorAyat.setText(ayat.getNumberAyat());
+        holder.arab.setText(ayat.getText());
         holder.tarjim.setText(ayatIndo.getText());
     }
     @Override
